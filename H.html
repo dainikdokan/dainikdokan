@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দৈনিক দোকান</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="top-bar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="menu-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <div class="dropdown">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+            <a href="#">My Wishlist</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="banner">
+            <img src="banner.jpg" alt="Banner">
+            <div class="banner-text">
+                <h1>Welcome to দৈনিক দোকান</h1>
+                <p>Your one-stop shop for everyday essentials</p>
+            </div>
+        </section>
+
+        <!-- Photo Carousel Section -->
+        <section class="photo-carousel">
+            <div class="carousel-container">
+                <button class="carousel-btn left" onclick="moveLeft()">&#10094;</button>
+                <div class="carousel-images">
+                    <img src="photo1.jpg" alt="Photo 1">
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <img src="photo3.jpg" alt="Photo 3">
+                </div>
+                <button class="carousel-btn right" onclick="moveRight()">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Nassery Things Rows -->
+        <section class="nassery-things">
+            <div class="row">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+            <div class="row">
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+            <div class="row">
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+                <div class="item">Item 9</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <p>Email: info@dainikdokan.com | WhatsApp: +8801911222569</p>
+        </div>
+    </footer>
+</body>
+</html>
