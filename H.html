@@ -6,86 +6,100 @@
     <title>দৈনিক দোকান</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <header>
-        <div class="top-bar">
+
+<!-- Top Navigation Bar -->
+<header>
+    <div class="top-bar">
+        <div class="logo-container">
             <img src="Logo Green New-01.jpg" alt="Logo" class="logo">
-            <div class="menu-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-                <div class="dropdown">
-                    <i class="fas fa-ellipsis-v"></i>
-                    <div class="dropdown-content">
-                        <a href="#">About Us</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">Privacy</a>
-                    </div>
+            <span class="brand-name">দৈনিক দোকান</span>
+        </div>
+        <div class="menu-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <div class="dropdown">
+                <i class="fas fa-ellipsis-v"></i>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy</a>
                 </div>
             </div>
         </div>
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Contact</a>
-            <a href="#">My Wishlist</a>
-        </nav>
-    </header>
+    </div>
+    <nav class="navbar">
+        <a href="#" class="active" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('pages')">Pages</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="#" onclick="showSection('wishlist')">My Wishlist</a>
+    </nav>
+</header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="banner">
-            <img src="banner.jpg" alt="Banner">
-            <div class="banner-text">
-                <h1>Welcome to দৈনিক দোকান</h1>
-                <p>Your one-stop shop for everyday essentials</p>
-            </div>
-        </section>
-
-        <!-- Photo Carousel Section -->
-        <section class="photo-carousel">
-            <div class="carousel-container">
-                <button class="carousel-btn left" onclick="moveLeft()">&#10094;</button>
-                <div class="carousel-images">
-                    <img src="photo1.jpg" alt="Photo 1">
-                    <img src="photo2.jpg" alt="Photo 2">
-                    <img src="photo3.jpg" alt="Photo 3">
-                </div>
-                <button class="carousel-btn right" onclick="moveRight()">&#10095;</button>
-            </div>
-        </section>
-
-        <!-- Nassery Things Rows -->
-        <section class="nassery-things">
-            <div class="row">
-                <div class="item">Item 1</div>
-                <div class="item">Item 2</div>
-                <div class="item">Item 3</div>
-            </div>
-            <div class="row">
-                <div class="item">Item 4</div>
-                <div class="item">Item 5</div>
-                <div class="item">Item 6</div>
-            </div>
-            <div class="row">
-                <div class="item">Item 7</div>
-                <div class="item">Item 8</div>
-                <div class="item">Item 9</div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <p>Email: info@dainikdokan.com | WhatsApp: +8801911222569</p>
+<!-- Sections -->
+<main>
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <h2 align="center">Welcome to দৈনিক দোকান</h2>
+        <img src="Cover-01.jpg" alt="Banner" class="banner">
+        <h2 align="center">All your favorite products in one place.</h2>
+        <div class="product-categories">
+            <img src="Untitled-1.png" alt="Attar" class="product-img">
+            <img src="Untitled-1.png" alt="Perfume" class="product-img">
+            <img src="Untitled-1.png" alt="Body Spray" class="product-img">
         </div>
-    </footer>
+        <!-- Large WhatsApp Button -->
+        <div class="big-whatsapp-button">
+            <a href="https://wa.me/8801405298400" target="_blank">
+                <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Pages Section -->
+    <section id="pages" class="section">
+        <h2 align="center">All Our Services</h2>
+        <div class="post-images">
+            <img src="P1.jpg" alt="Post 1">
+            <img src="P2.jpg" alt="Post 2">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 align="center">Contact Us</h2>
+        <div class="contact-buttons">
+            <a href="https://wa.me/8801405298400" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook Page</a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="mailto:dainikdokan@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+        </div>
+    </section>
+    
+    <!-- Wishlist Section -->
+    <section id="wishlist" class="section">
+        <h2 align="center">My Wishlist</h2>
+        <p align="center">Your added cart products will be displayed here.</p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="mailto:dainikdokan@gmail.com">Email</a>
+        <a href="#"><i class="fab fa-google-play"></i> Play Store</a>
+        <a href="#"><i class="fab fa-apple"></i> Apple Store</a>
+    </div>
+    <div class="payment-methods">
+        <img src="Visa.png" alt="Visa">
+        <img src="Master.png" alt="MasterCard">
+    </div>
+</footer>
+
 </body>
 </html>
