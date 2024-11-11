@@ -1,13 +1,9 @@
-let currentIndex = 0;
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(sectionId).classList.add('active');
 
-function moveLeft() {
-    const images = document.querySelector('.carousel-images');
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : 2;
-    images.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-function moveRight() {
-    const images = document.querySelector('.carousel-images');
-    currentIndex = (currentIndex < 2) ? currentIndex + 1 : 0;
-    images.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const navLinks = document.querySelectorAll('.navbar a');
+    navLinks.forEach(link => link.classList.remove('active'));
+    document.querySelector(`[onclick="showSection('${sectionId}')"]`).classList.add('active');
 }
